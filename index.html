@@ -22,13 +22,19 @@
   <body>
     <!-- Menú Header-->
     <div class="menuContainer"></div>
+    <!--Carrusel-->
+    <div class="carrusel"></div>
     <!--Categorias imagenes-->
     <div class="categoriasimagenes"></div>
+
   </body>
   <!--menú-->
   <script>
     $(document).ready(function () {
       $('.menuContainer').load('components/menu.html');
+    });
+    $(document).ready(function () {
+      $('.carrusel').load('components/carrusel.html');
     });
     $(document).ready(function () {
       $('.categoriasimagenes').load('components/categoriasimagenes.html');
