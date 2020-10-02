@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Unidigital</title>
@@ -20,7 +21,7 @@
   </head>
   <body>
     <!-- Menú-->
-
+    <div class="menuContainer"></div>
     <!--Header-->
     <div class="p-5 text-center bg-light">
       <img
@@ -201,6 +202,11 @@
     </div>
     </div>
   </body>
+  <script>
+    $(document).ready(function () {
+      $('.menuContainer').load('components/menu.html');
+    });
+  </script>
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
